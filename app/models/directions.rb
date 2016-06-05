@@ -1,7 +1,7 @@
 class Directions < OpenStruct
   attr_reader :service
 
-  def initialize
+  def service
     @service = DirectionsService.new
     binding.pry
   end
